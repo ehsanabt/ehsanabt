@@ -15,6 +15,7 @@
   - [Event listener](#event-listener)
   - [We can make an element and APPEND it in the middle of our code:](#we-can-make-an-element-and-append-it-in-the-middle-of-our-code)
       - [Code description;](#code-description)
+  - [Practice](#practice)
 
 
 # Learn DOM manipulation
@@ -156,3 +157,11 @@ This code appends the new element to the existing element:
 **Why?**
 
 **When should we use this?**
+
+## Practice
+1. Go to [https://www.freecodecamp.org](https://www.freecodecamp.org)
+2. Chnage the "Learn to code — for free." to "Ehsan Abtahi's Website"
+3. Remove "Build projects and Earn certifications." Paragraph
+4. Change backgropund Color of "Get Started It's Free" from **yellow** to **red**.
+5. Chnage the image to to "https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1600"
+6. Add a new headline(h1) at the end like "I changed everything in here"
