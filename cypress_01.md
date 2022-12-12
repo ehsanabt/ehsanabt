@@ -1,0 +1,1 @@
+## Section 1: Introduction to Cypress and its advantages in Automation world

@@ -1,0 +1,1 @@
+## Section 15: Mocking Http requests/responses with Cypress (XHR Testing)

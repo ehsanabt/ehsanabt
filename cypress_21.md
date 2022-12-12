@@ -1,0 +1,1 @@
+## Section 21: Learn JavaScript Fundamentals from Scratch for Automation

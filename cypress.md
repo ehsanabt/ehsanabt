@@ -4,3 +4,4 @@ Cypress is a purely JavaScript-based front-end testing tool built for the modern
 
 
 Cypres helps QA engineers to test a software via browser and Cypress makes testing process easier. You can write some code to test and check all page items like: URL, Buttons, Text boxes, Texts and everything, you can even click on a button or URL by writing some codes to see if they work or not!
+

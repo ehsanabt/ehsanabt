@@ -1,0 +1,1 @@
+## Section 18: Cypress DB Integration Testing Strategy

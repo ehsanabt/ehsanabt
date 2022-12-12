@@ -1,0 +1,1 @@
+## Section 2: Step by Step instructions for Cypress Installation & project Setup

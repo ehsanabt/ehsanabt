@@ -1,0 +1,1 @@
+## Section 6: Handling Web Controls UI using Cypress
