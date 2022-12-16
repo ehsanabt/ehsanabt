@@ -28,7 +28,7 @@ exm03: `input[type='search']` will select input tag with type=search
 
 ### You can also select an object on a website in cypress and it automatically show its cypress selector code.
 
-![ alt Cypress open first page](Assets/Images/Screenshot%202022-12-14%20at%207.57.29%20PM.png)
+![ alt Cypress open first page](Assets/Images/03.png)
 
 
 ### You have to type this piece of code in the begining of your cypress code to turn the Autocomplete on `/// <reference types="Cypress" />`

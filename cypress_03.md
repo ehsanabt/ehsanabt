@@ -12,7 +12,7 @@ It will automatically test the website in Electron browser but without oppening 
 You can also set what browser will be used for testing by this command: `node_modules/.bin/cypress run  --browser chrome`
 
 2- Below page will be opened automatically:
-![ alt Cypress open first page](Assets/Images/Screenshot%202022-12-13%20at%202.32.22%20PM.png)
+![ alt Cypress open first page](Assets/Images/01.png)
 
 3- Click on E2E Testing
 
@@ -34,6 +34,6 @@ You can also set what browser will be used for testing by this command: `node_mo
 
 12- Go to cypress.config.js file and add below code 
 
-![ alt Cypress open first page](./Assets/Images/Screenshot%202022-12-13%20at%202.57.38%20PM.png)
+![ alt Cypress open first page](./Assets/Images/02.png)
 
 13- Save and you will have this Test01 file in spec page and you can execute your cypress test there in live
