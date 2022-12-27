@@ -1,1 +1,0 @@
-## Section 16: Single Sign on ( SSO) Automation Testing with Cypress

@@ -20,4 +20,4 @@
 5- Open Folder in Visual Studio
 
 #### Install Cypress
-1- Terminal: npm install Cypress --save-dev
+1- Terminal: `$ npm install Cypress --save-dev`

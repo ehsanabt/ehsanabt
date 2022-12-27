@@ -1,1 +1,0 @@
-## Section 12: Cypress Framework Part 4- Dashboard feature with Video recording & Screenshots

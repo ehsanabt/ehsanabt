@@ -1,1 +1,0 @@
-## Section 7: Advance Automation to handling Alerts,popups, Child Windows using Cypress-Jquery

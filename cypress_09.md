@@ -1,1 +1,0 @@
-## Section 9: Cypress Framework Part 1- Understanding Fixtures and Custom commands

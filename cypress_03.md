@@ -1,11 +1,11 @@
 ## Section 3: Introduction to Cypress Test Runner and command line features
 
 #### Open Cypress:
-1- Terminal: node_modules/.bin/cypress open `This command is used to test a website via a browser`
+1- Terminal: `$ node_modules/.bin/cypress open` `This command is used to test a website via a browser`
 
 We can also test a website without using a browser (in VS) by using this command in the terminal: `node_modules/.bin/cypress run ` 
 
-It will automatically test the website in Electron browser but without oppening the brwoser!
+It will automatically test the website in Electron browser but without opening the browser!
 
 #### Second way is faster than the first one!
 

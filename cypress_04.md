@@ -2,7 +2,7 @@
 
 #### How to open a website:
 
-describe("My first test suite", function()
+`describe("My first test suite", function()
 {
     it("My first test case", function()
     {
@@ -10,7 +10,7 @@ describe("My first test suite", function()
     }
     )
 }
-)
+)`
 
 
 #### To select an object in a website like textbox or button you have to use CSS selectors!

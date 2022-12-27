@@ -1,1 +1,0 @@
-## Section 10: Cypress Framework Part 2-  Page object Design & Test Parameterization

@@ -1,1 +1,0 @@
-## Section 13: Cypress Framework Part 5- Building npm Scripts and Integration to Jenkins

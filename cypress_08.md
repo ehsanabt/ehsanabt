@@ -1,1 +1,0 @@
-## Section 8: Understand How to Automate Frames & Child windows in Cypress
