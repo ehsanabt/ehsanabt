@@ -30,13 +30,17 @@ Ranorex Selocity's syntax!! How can I learn them?
 
 ## Question 04
 
-`describe ("Iterate over elements", () => {
-it ("Log information of all hair care products", () => {
-cy.visit("https://automationteststore.com/");
-cy.get ("a[href*='product/category&path=']").contains("Hair Care").click();
-cy.get (".fixed _wrapper prdocutname").each(($el, index, $list) => {
-•cy.log ("Index: " + index + " : " + $el.text ())
+```js 
+describe ("Iterate over elements", () => {
+    it ("Log information of all hair care products", () => {
+    cy.visit("https://automationteststore.com/");
+    cy.get ("a[href*='product/category&path=']").contains("Hair Care").click();
+    cy.get (".fixed _wrapper prdocutname").each( ($el, index, $list)  => {
+    cy.log ("Index: " + index + " : " + $el.text ())
 });
-};`
+};
+
+
+```
 
 
