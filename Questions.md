@@ -44,3 +44,124 @@ describe ("Iterate over elements", () => {
 ```
 
 
+## Question 05
+
+What are 'attr' and 'include' (az koja avord???)`
+``` js
+    it.only("Validate a specific hair care product", () => {
+        cy.visit("https://automationteststore.com/")
+        cy.get(".thumbnail").as("productThumbnail")
+        cy.get("@productThumbnail").should("have.length", 16)
+        cy.get("@productThumbnail").find(".productcart").invoke('attr', 'title').should('include', 'Add to Cart')
+    })
+```
+
+
+## Question Jadid 06
+
+Video 97: 2:25 min: what is $LinkText and how it works and what does it do
+``` js
+cy.get('.thumbnail').find(".oneprice').invoke('text').as('itemPrice')
+cy.get('@itemPrice').then(SlinkText =› {
+var itemPrice = $linkText.split('k');
+var i;
+for(i = 0; i ‹ itemPrice.length; i++) {
+cy.log(itemPrice[il)
+})
+
+```
+
+Video 116: 7:49 min: Same question about $
+
+``` js
+
+describe ("Handling IFrame & Modals", () => {
+    it ("Handle webdriveruni iframe and modal", () => {
+        cy.visit("http://www.webdriveruniversity.com")
+        cy.get ('#iframe").invoke('removeAttr', 'target').click({force:true})
+        cy.get ('#frame').then($iframe => {
+            const body = $iframe. contents ().find('body')
+        })
+    })
+})
+```
+
+## Question Jadid 07
+
+What Stub is?
+
+Video 115
+
+## Question Jadid 08
+
+Video 117: 2:54
+
+Why he used this part of code for clicking on a button (Did not do the same Like previous examples(Alert.js))!!!
+
+## Ranorex Sample
+
+Video 123: 2:45 min & 6:00 min
+Video 130: 1:50 min
+Video 158: 4 min
+Video 164: 2:20 min  
+
+## Question Jadid 09
+
+``` js
+describe("Verify Autocomplete dropdown list via Webdriveruni", () => {
+    it("Select specific product via autocomplete list", () => {
+        cy.visit("http://www.webdriveruniversity.com")
+        cy.get('#autocomplete-textfield').invoke('removeAttr', 'target').click({ force: true })
+
+        cy.get('#myInput').type('A')
+
+        // Az inja be bad ro moshkel daram
+        cy.get('#myInputautocomplete-list > *').each(($el, index, $list) => {
+            const prod = $el.text()
+            const productToSelect = 'Avacado'
+
+            if (prod === productToSelect) {
+                $el.click()
+
+                cy.get('#submit-button').click()
+                cy.url().should('include', productToSelect)
+            }
+        })
+
+    })
+```
+
+## Question Jadid 10
+
+    
+``` js
+    it.only("I should be able hold down the left mouse click button on a given element", () => {
+        cy.visit("http://www.webdriveruniversity.com")
+        cy.get('#actions').scrollIntoView().invoke('removeAttr', 'target').click({ force: true })
+
+// az koja miyare inaro?
+        cy.get('#click-box').trigger('mousedown', { which: 1 }).then(($element) => {
+            expect($element).to.have.css('background-color', 'rgb(0, 255, 0)')
+        })
+    })
+```
+
+## Question Jadid 11:
+
+``` js
+        var date = new Date()
+        date.setDate(date.getDate() + 1)
+
+        var futureYear = date.getFullYear()
+        var futureMonth = date.toLocaleDateString("default", { month: "long" }) //injash chi shod?
+        var futureDay = date.getDate()
+
+        cy.log("Future Year to Select:" + futureYear)
+        cy.log("Future Month to select:" + futureMonth)
+        cy.log("Future Day to Select:" + futureDay)
+```
+
+
+## Question Jadid 12:
+
+When I type command "git remote -v" , I have 2 different github ...
