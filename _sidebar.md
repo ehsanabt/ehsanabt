@@ -14,6 +14,8 @@
   * [Getting started with Cypress Test Automation](./cypress_04.md)
 * [Cypress New Course](./cypress_new.md)
   * [Cypress Introduction](./cypress_new_01.md)
+  * [Cypress Syntax](./Cypress_syntax.md)
 * [Linux](./linux.md)
 * [VsCode](./vscode.md)
 * [Dom](./dom.md)
+  
