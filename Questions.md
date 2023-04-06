@@ -164,4 +164,44 @@ describe("Verify Autocomplete dropdown list via Webdriveruni", () => {
 
 ## Question Jadid 12:
 
-When I type command "git remote -v" , I have 2 different github ...
+What are request and response and how they work?
+
+cy.wait("@newUser").then(({ request, response }) => ...
+
+```js
+    it("Test Valid Signup", () => {
+
+        cy.intercept("POST", "**/*.realworld.io/api/users").as("newUser")
+
+        cy.visit("http://localhost:4200")
+        cy.get(".nav-link").contains("Sign up").click()
+        cy.get("[placeholder='Username']").type(userName)
+        cy.get("[placeholder='Email']").type("Auto_email" + randomString + "@email.com")
+        cy.get("[placeholder='Password']").type("Password1")
+        cy.get("button").contains("Sign up").click()
+
+        cy.wait("@newUser").then(({ request, response }) => {
+            cy.log("Request: " + JSON.stringify(request))
+            cy.log("Response: " + JSON.stringify(response))
+
+            expect(response.statusCode).to.eq(200)
+            expect(request.body.user.username).to.eq(userName)
+        })
+```
+
+
+## Question Jadid: Fixture
+
+Video 302: 5 min
+
+I don't know what fixture is, why it is used in below code:
+
+```js
+   it("Test Valid Login", () => {
+        cy.intercept("GET", "**/tags", { fixture: 'popularTags.json' })
+        cy.visit("http://localhost:4200")
+        cy.get(".nav-link").contains("Sign in").click()
+        cy.get("[placeholder = 'Email']").type(email)
+        cy.get("[placeholder = 'Password']").type(password)
+        cy.get("[type = 'submit']").click()
+    })

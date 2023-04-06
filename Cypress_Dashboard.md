@@ -46,3 +46,8 @@ we can make some scripts in package.json file to make working with terminal easi
     "cypress-regression-pack": "npm run delete-results && npm run delete-mochawesome-report && npm run triggerAllTests-headless && npm run mochawesome-merge"
  ```
 
+Creating a script to test in multi browsers:
+
+```js
+"cypress-multi-browser": "npm run triggerAllTests-autoTestStore -- --browser electron --headed & npm run triggerAllTests-autoTestStore -- --browser edge --headed"
+```

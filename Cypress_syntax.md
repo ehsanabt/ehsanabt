@@ -34,7 +34,8 @@ cy.get('[name="first_name"]').type('Ehsan')
 
 Describe is a Cypress method for grouping one or more related tests.
 
-`describe("Inspect Automation Test Store items using chain of commands", () => {
+``` js 
+describe("Inspect Automation Test Store items using chain of commands", () => {
     it("Click on the first item using item header", () => {
         cy.visit("https://www.automationteststore.com/");
         cy.get('#block_frame_featured_1769 > .thumbnails > :nth-child(1) > .fixed_wrapper > .fixed > .prdocutname').click();
@@ -47,7 +48,9 @@ Describe is a Cypress method for grouping one or more related tests.
         cy.visit("https://www.automationteststore.com/");
         cy.get('.fixed_wrapper').find('.prdocutname').eq(0).click()
     });
-})`
+})
+
+```
 
 ## Then
 
@@ -98,7 +101,7 @@ cy.get (".fixed_wrapper .prdocutname").each(($el, index, $list) => {
 
 ## Invoke
 
-It is used to use a property(Functuion) of an object.
+It is used to use a property(Functuion) of an object. (JQuery function)
 
 ``` js
 it ("Validate a specific hair care product", () =› {
@@ -789,4 +792,48 @@ We can also add below lines of code directly inside our test to add multiple att
             openMode: 2
         }
     }, () => {
+```
+
+## Running a test only in a specific browser
+
+```js
+if (Cypress.isBrowser("firefox")) { ///Do it }
+        else {
+            const contactUs_PO = new Contact_Us_PO()
+            contactUs_PO.contactForm_Submission(data.first_name, data.last_name, " ", "How can I learn Cypress?", "body", "Error: Invalid email address")
+        }
+```
+
+
+## Alerts
+
+We need to check alerts to see if they are like what we expect or not
+
+** Cypress clicks on Confirm/OK button of alerts automatically. 
+
+``` js
+cy.on('window:alert', (str)=> {
+  expect(str).to.equal('Hello, share this practice page and share your knowledge')
+})
+
+```
+
+## Checkboxes
+
+We need to test checkboxes to see if they are checked or not:
+
+```js
+ cy.get('#checkBoxOption1').check().should("be.checked").and("have.value", "option1")
+
+```
+
+## Choosing all items with the same attribute:
+
+using below formula:
+
+tagname[attribute=value]
+
+```js
+cy.get('input[type="checkbox"]').check(["option2", "option3"])
+
 ```
